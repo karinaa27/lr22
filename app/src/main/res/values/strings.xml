@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lr22</string>
+    <string name="ofrom">Оформить заказ</string>
+    <string name="sirop">Сироп</string>
+    <string name="sugar">Сахар</string>
+    <string name="slivki">Сливки</string>
+    <string name="milk">Молоко</string>
+    <string name="cold">Холодный</string>
+    <string name="hot">Горячий</string>
+    <string-array name="delivery_options">
+        <item>Самовывоз</item>
+        <item>Доставка</item>
+    </string-array>
+</resources>

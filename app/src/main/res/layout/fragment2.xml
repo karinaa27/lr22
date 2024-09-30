@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ToggleButton
+            android:id="@+id/temperatureToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Горячий"
+            android:textOff="Холодный"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/temperatureIndicator"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/circle" /> <!-- По умолчанию красный круг -->
+    </LinearLayout>
+
+    <!-- Выбор добавок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите добавки:"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Молоко" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сливки" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сахар" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSyrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сироп" />
+
+    <!-- Способ доставки -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Способ доставки:"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/deliverySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Кнопка для оформления заказа -->
+    <Button
+        android:id="@+id/submitOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Доставить"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
